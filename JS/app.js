@@ -1,8 +1,8 @@
 let catalogo = JSON.parse(localStorage.getItem("catalogo")) || [
-    { nombre: "Figura Anakin", precio: 70.000 },
-    { nombre: "Figura Obi Wan", precio: 50.000 },
-    { nombre: "Figura Yoda", precio: 90.000 },
-    { nombre: "Figura Luke", precio: 65.000 }
+    { nombre: "Figura Anakin", precio: 25.00 },
+    { nombre: "Figura Obi Wan", precio: 30.00 },
+    { nombre: "Figura Yoda", precio: 20.00 },
+    { nombre: "Figura Luke", precio: 35.00 }
 ];
 
 
