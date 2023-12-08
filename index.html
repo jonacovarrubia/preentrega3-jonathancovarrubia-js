@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Carrito de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="mi-header-estilo text-white text-center py-4">
+        <h1>Simulador de Carrito de Compras</h1>
+    </header>
+
+    <section class="container my-4">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/anakin.jpg" class="card-img-top" alt="Figura Anakin">
+                    <div class="card-body">
+                        <h5 class="card-title">Figura Anakin</h5>
+                        <p class="card-text precio">$70.000</p>
+                        <button class="btn btn-primary agregar-btn" onclick="agregarAlCarrito(0)">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/obiwan.jpg" class="card-img-top" alt="Figura Obi Wan">
+                    <div class="card-body">
+                        <h5 class="card-title">Figura Obi Wan</h5>
+                        <p class="card-text precio">$50.000</p>
+                        <button class="btn btn-primary agregar-btn" onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/yoda.jpg" class="card-img-top" alt="Figura Yoda">
+                    <div class="card-body">
+                        <h5 class="card-title">Figura Yoda</h5>
+                        <p class="card-text precio">$90.000</p>
+                        <button class="btn btn-primary agregar-btn" onclick="agregarAlCarrito(2)">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/luke.jpg" class="card-img-top" alt="Figura Luke">
+                    <div class="card-body">
+                        <h5 class="card-title">Figura Luke</h5>
+                        <p class="card-text precio">$65.000</p>
+                        <button class="btn btn-primary agregar-btn" onclick="agregarAlCarrito(3)">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-4">
+        <div id="carrito-section" style="display: none;">
+            <h2 class="mb-4">Carrito de Compras</h2>
+            <ul id="lista-carrito" class="list-group"></ul>
+            <p id="total" class="font-weight-bold mt-3">Total: $0.00</p>
+            <button id="comprar-btn" class="btn btn-success" onclick="comprar()">Comprar</button>
+            <button id="vaciar-carrito" class="btn btn-danger" onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </section>
+
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModalCarrito()">&times;</span>
+            <p id="mensaje-carrito"></p>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-2">
+        <p>&copy; 2023 figurestarwars</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
